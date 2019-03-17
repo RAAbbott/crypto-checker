@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Crypto-Currency Checker</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row heading">
+        <div class="col-sm-12 text-center">
+          <h2>Crypto-Currency Checker</h2>
+        </div>
+        <div class="col-sm-12 text-center description">
+          <p>Select from the options below to get your results!</p>
+        </div>
+      </div>
+      <div class="row">
+        <select id="crypto" class="form-control">
+          <option value="BTC" selected>Bitcoin</option>
+          <option value="ETH">Ethereum</option>
+          <option value="LTC">Litecoin</option>
+        </select>
+        <select id="fiat" class="form-control">
+          <option value="USD" selected>Dollars (US)</option>
+          <option value="GBP">Pounds (GB)</option>
+          <option value="EUR">Euros (EU)</option>
+        </select>
+        <button type="button" id="value-button" class="btn-sm btn-primary">
+          Check Values
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="results"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./index.js">
+
+    </script>
+  </body>
+</html>
